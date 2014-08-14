@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+body {
+	background-color: white;
+}
+
+#inquiry_hide_block {
+	text-align: center;
+	padding: 5px;
+}

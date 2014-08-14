@@ -1,0 +1,91 @@
+@CHARSET "UTF-8";
+body {
+	background-color: #F9F3D7;
+}
+
+.block {
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px #aaaaaa;
+}
+
+#headBlock {
+	padding-top: 5px;
+	background-color: #FFFFFF; /*設背景為白色*/
+	height: 40px; /*設定區塊高度*/
+	margin-bottom: 5px; /*設定與下方區塊的間隔*/
+}
+
+#menuBlock {
+	padding-top: 5px;
+	float: left; /*這樣才能讓主要內容區塊跑上來*/
+	background-color: #FFFFFF; /*設背景為白色*/
+	/*height: 700px;*/
+	width: 240px;
+}
+
+#handlerBlock {
+	float: left;
+	background-color: transparent;
+	margin: 0px;
+	/*height: 700px;*/
+	width: 10px;
+}
+
+#handlerBlock:hover {
+	cursor: pointer;
+}
+
+#btnHandler {
+	float: left;
+	background-color: #A2A1EF;
+	margin-left: 0px;
+	margin-top: 100px;
+	height: 50px;
+	width: 10px; //
+	margin: 0;
+	border-radius: 2px;
+}
+
+#contentBlock {
+	padding: 0 0 0 0;
+	margin-left: 250px; /*比left的寬度多5*/
+	background-color: #FFFFFF;
+}
+
+#contentFrame,#headFrame {
+	border-style: none;
+}
+/*
+#headFrame {
+	border-style: none;
+}*/
+
+#contentFrame {
+	margin-top: 5px;
+}
+
+#handlerBlock .handler_hide,.handler_show {
+	border-style: solid;
+	height: 0;
+	width: 0;
+	padding: 0;
+}
+
+#handlerBlock .handler_hide {
+	border-color: transparent transparent transparent red;
+	border-width: 25px 0px 25px 10px;
+}
+
+#handlerBlock .handler_show {
+	border-color: transparent red transparent transparent;
+	border-width: 25px 10px 25px 0px;
+}
+
+#footerBlock {
+	margin-top: 5px;
+	background-color: #FFFFFF;
+}
+
+body,html {
+	height: 98%;
+}

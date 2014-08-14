@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+#menu dd {
+	margin-left: 14px;
+}
+
+#menu dl {
+	padding: 0px;
+}
+
+#menu dl dl {
+	margin: 0px;
+}
+
+#menu>dl {
+	margin: 5px;
+}
+
+#menu .item_hide,.item_show {
+	border-style: solid;
+	height: 0;
+	width: 0;
+	padding: 0;
+}
+
+#menu .item_hide {
+	border-color: transparent transparent transparent green;
+	border-width: 6px 0px 6px 10px;
+}
+
+#menu .item_show {
+	border-color: green transparent transparent transparent;
+	border-width: 10px 6px 0px 6px;
+}
+
+#menu a {
+	text-decoration: none;
+}
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.main" template="/WEB-INF/jsp/template/base_main.jsp">
+		<put-attribute name="header" value="/WEB-INF/jsp/parts/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/parts/menu.jsp" />
+		<put-attribute name="content" value="" />
+		<!-- <put-attribute name="footer" value="/parts/footer.jsp" /> -->
+	</definition>
+
+	<definition name="base.report" template="/WEB-INF/jsp/template/base_report.jsp">
+		<put-attribute name="inquiry_condition" value="" />
+		<put-attribute name="inquiry_result" value="" />
+		<put-attribute name="script" value="" />
+		<put-attribute name="style" value="" />
+		<put-attribute name="bread_crumb" value="/WEB-INF/jsp/parts/bread_crumb.jsp" />
+	</definition>
+
+	<definition name="homepage" extends="base.main">
+	<!-- content放的是iframe的來源初始值，必須是可以直接抓取的網頁，不能取WEB-INF底下的網頁 -->
+		<put-attribute name="content" value="welcome.jsp" />
+	</definition>
+
+	<definition name="test_content_iframe" extends="base.report">
+		<put-attribute name="inquiry_condition"
+			value="/WEB-INF/jsp/condition/inquiry_month.jsp" />
+		<put-attribute name="inquiry_result"
+			value="/WEB-INF/jsp/result/test_content_iframe.jsp" />
+	</definition>
+</tiles-definitions>
